@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喝林 Holin — 別想了，交給命運決定</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-bubbles" aria-hidden="true"></div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="logo">🥤 喝林 Holin</h1>
+      <p class="slogan">別想了，交給命運決定。</p>
+    </header>
+
+    <!-- Slot Machine Section -->
+    <section class="slot-section">
+      <div class="slot-machine">
+        <div class="slot-col">
+          <div class="slot-label">店家</div>
+          <div class="slot-window">
+            <div class="slot-reel" id="reelStore">
+              <span>可不可</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slot-divider">✦</div>
+
+        <div class="slot-col">
+          <div class="slot-label">類別</div>
+          <div class="slot-window">
+            <div class="slot-reel" id="reelType">
+              <span>純茶</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Action Button -->
+    <section class="action-section">
+      <button class="btn-spin" id="btnSpin">
+        <span class="btn-text">幫 我 選！</span>
+        <span class="btn-icon">🎰</span>
+      </button>
+    </section>
+
+    <!-- Result Section -->
+    <section class="result-section" id="resultSection">
+      <p class="result-text" id="resultText"></p>
+      <div class="result-buttons">
+        <a class="btn-map" id="btnMap" href="#" target="_blank" rel="noopener noreferrer">
+          📍 查看最近的分店
+        </a>
+      </div>
+    </section>
+
+    <!-- Nearby Section (always visible) -->
+    <section class="nearby-section">
+      <a class="btn-map btn-map-nearby" id="btnNearby" href="#" target="_blank" rel="noopener noreferrer">
+        🧋 附近所有飲料店
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 喝林 Holin — 讓命運決定你的飲料</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
